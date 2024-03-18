@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.labfxbetatest.HelloController">
+
+   <children>
+      <VBox fx:id="paneVbox1" alignment="CENTER" layoutX="34.0" layoutY="170.0" prefHeight="163.0" prefWidth="392.0" />
+      <GridPane fx:id="paneLogin" alignment="CENTER" layoutX="48.0" layoutY="27.0" prefHeight="245.0" prefWidth="371.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblHeaderHello" alignment="CENTER" prefHeight="17.0" prefWidth="148.0" text="WELCOME" />
+            <Label fx:id="lblUsername" prefHeight="43.0" prefWidth="72.0" text="Username: " GridPane.rowIndex="1" />
+            <TextField fx:id="txtFieldUsername" prefHeight="20.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="psFieldPassword" prefHeight="17.0" prefWidth="196.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lblPassword" prefHeight="41.0" prefWidth="60.0" text="Password: " GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="LoginButton" alignment="CENTER" layoutX="230.0" layoutY="321.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="25.0" prefWidth="133.0" text="SIGN IN" />
+   </children>
+</AnchorPane>
