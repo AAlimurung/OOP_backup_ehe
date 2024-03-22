@@ -1,0 +1,9 @@
+Username///
+password///
+1 if student, 0 if admin
+hehe
+hehe
+1
+Jenica
+Jenica123
+0
